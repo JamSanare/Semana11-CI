@@ -1,0 +1,4 @@
+selenium>=4.10
+behave>=1.2.7
+pytest>=8.0
+pytest-playwright>=0.5

@@ -1,0 +1,25 @@
+# Ejecutor de pruebas Selenium: unittest (CP-01..CP-31) + Behave (41 escenarios).
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    CHROME_BINARY=/usr/bin/chromium \
+    CHROMEDRIVER_PATH=/usr/bin/chromedriver \
+    CHROME_NO_SANDBOX=1
+
+# Chromium y chromedriver de Debian (versiones compatibles entre sí).
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends chromium chromium-driver fonts-liberation \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+RUN pip install "selenium>=4.10" "behave>=1.2.7" "unittest-xml-reporting>=3.2.0"
+
+COPY utils/ utils/
+COPY pages/ pages/
+COPY tests/ tests/
+COPY features/ features/
+COPY scripts/run_selenium.sh scripts/run_selenium.sh
+
+CMD ["bash", "scripts/run_selenium.sh"]

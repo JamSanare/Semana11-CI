@@ -1,0 +1,9 @@
+.git
+.github
+**/__pycache__
+**/*.pyc
+reports
+evidencias
+evidencias-playwright
+.env
+*.zip

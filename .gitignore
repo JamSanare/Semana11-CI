@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+reports/
+evidencias/
+evidencias-playwright/
+.env

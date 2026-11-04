@@ -1,0 +1,61 @@
+# Entorno de pruebas de TiendaDemo.
+# Variables en .env (ver .env.example). Los runners están en el perfil "tests":
+#   docker compose up -d tiendademo
+#   docker compose --profile tests run --rm selenium-runner
+#   docker compose --profile tests run --rm playwright-runner
+
+services:
+  tiendademo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tiendademo-app:${IMAGE_TAG:-local}
+    container_name: tiendademo-app
+    ports:
+      - "${TIENDA_PORT:-8080}:80"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/tienda_demo.html"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    networks:
+      - pruebas
+
+  selenium-runner:
+    profiles: ["tests"]
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.selenium
+    image: tiendademo-selenium:${IMAGE_TAG:-local}
+    environment:
+      BASE_URL: ${BASE_URL:-http://tiendademo/tienda_demo.html}
+      EVIDENCE_DIR: /app/evidencias
+    volumes:
+      - ./reports:/app/reports
+      - ./evidencias:/app/evidencias
+    depends_on:
+      tiendademo:
+        condition: service_healthy
+    networks:
+      - pruebas
+
+  playwright-runner:
+    profiles: ["tests"]
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.playwright
+    image: tiendademo-playwright:${IMAGE_TAG:-local}
+    environment:
+      BASE_URL: ${BASE_URL:-http://tiendademo/tienda_demo.html}
+    volumes:
+      - ./reports:/app/reports
+      - ./evidencias-playwright:/app/evidencias-playwright
+    depends_on:
+      tiendademo:
+        condition: service_healthy
+    networks:
+      - pruebas
+
+networks:
+  pruebas:
+    name: tiendademo-pruebas
