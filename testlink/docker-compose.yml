@@ -1,0 +1,36 @@
+services:
+  testlink-db:
+    image: mariadb:10.11
+    container_name: testlink-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: testlink
+      MARIADB_USER: testlink
+      MARIADB_PASSWORD: testlinkpass
+    volumes:
+      - testlink-db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  testlink-app:
+    build: .
+    container_name: testlink-app
+    restart: unless-stopped
+    depends_on:
+      testlink-db:
+        condition: service_healthy
+    ports:
+      - "8082:80"
+    volumes:
+      - ./config_db.inc.php:/var/www/html/config_db.inc.php
+      - testlink-upload:/var/testlink/upload_area
+      - testlink-logs:/var/testlink/logs
+
+volumes:
+  testlink-db-data:
+  testlink-upload:
+  testlink-logs:

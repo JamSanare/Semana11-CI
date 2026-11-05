@@ -1,0 +1,103 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  SOAK_DURATION: 1m
+  PASO: "10"
+  TL_URL: http://localhost:8082/lib/api/xmlrpc/v1/xmlrpc.php
+
+jobs:
+  ci:
+    runs-on: self-hosted   # en tu Mac, para llegar a TestLink (localhost:8082)
+    steps:
+      - name: 1 Checkout
+        uses: actions/checkout@v4
+
+      - name: 2 Build
+        run: docker compose --profile tests build
+
+      - name: 3 Environment
+        run: docker compose up -d --wait tiendademo
+
+      - name: 4 Unit Tests
+        run: echo "Sin pruebas unitarias en el proyecto"
+
+      - name: 5 Selenium
+        id: selenium
+        continue-on-error: true
+        run: docker compose --profile tests run --rm -T selenium-runner
+
+      - name: 6 Playwright
+        id: playwright
+        continue-on-error: true
+        run: docker compose --profile tests run --rm -T playwright-runner
+
+      - name: 7 Functional
+        id: functional
+        continue-on-error: true
+        run: docker compose --profile tests run --rm -T aulanova-runner
+
+      - name: 8 Performance
+        id: perf
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          docker compose --profile tests run --rm -T aulanova-runner bash pruebas/scripts/ejecutar.sh rendimiento | tee reports/rendimiento.log
+          bash scripts/gate_k6.sh reports/rendimiento.log rendimiento
+
+      - name: 9 Stress
+        id: stress
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          docker compose --profile tests run --rm -T aulanova-runner bash pruebas/scripts/ejecutar.sh estres | tee reports/estres.log
+          bash scripts/gate_k6.sh reports/estres.log estres
+
+      - name: 10 Security
+        id: security
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          docker compose --profile tests run --rm -T aulanova-runner bash pruebas/scripts/ejecutar.sh seguridad | tee reports/seguridad.log
+          bash scripts/gate_k6.sh reports/seguridad.log seguridad
+
+      - name: 11 TestLink
+        if: always()
+        env:
+          TL_API_KEY: ${{ secrets.TL_API_KEY }}
+          TL_PLAN_ID: ${{ secrets.TL_PLAN_ID }}
+          PIPELINE_ID: gha-${{ github.run_id }}
+          REPORT_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python3 scripts/tl_create_build.py; python3 scripts/k6_to_csv.py && python3 scripts/testlink_reporter.py
+
+      - name: 12 Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reportes-${{ github.run_id }}
+          path: |
+            reports/
+            evidencias/
+            evidencias-playwright/
+
+      - name: 13 Cleanup
+        if: always()
+        run: docker compose --profile tests down -v --remove-orphans
+
+      - name: Quality Gate
+        if: always()
+        run: |
+          echo "selenium=${{ steps.selenium.outcome }} playwright=${{ steps.playwright.outcome }} functional=${{ steps.functional.outcome }}"
+          echo "performance=${{ steps.perf.outcome }} stress=${{ steps.stress.outcome }} security=${{ steps.security.outcome }}"
+          if [ "${{ steps.selenium.outcome }}" = "failure" ] || [ "${{ steps.playwright.outcome }}" = "failure" ] || [ "${{ steps.functional.outcome }}" = "failure" ]; then
+            echo "GATE FALLIDO: fallo una etapa funcional obligatoria"; exit 1
+          fi
+          if [ "${{ steps.perf.outcome }}" = "failure" ]; then
+            echo "GATE FALLIDO: rendimiento incumple umbrales"; exit 1
+          fi
+          echo "Estres y seguridad: hallazgos visibles en los logs, no se ocultan"

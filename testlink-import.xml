@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Semana11-Casos">
+  <testsuite name="Funcionales y UAT (Selenium y Playwright)">
+    <testcase name="CP-01 Agregar producto al carrito">
+      <summary>Automatizado con Selenium / Playwright (cp01_agregar_producto_al_carrito)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp01_agregar_producto_al_carrito</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-02 Agregar varios productos diferentes">
+      <summary>Automatizado con Selenium / Playwright (cp02_agregar_varios_productos_diferentes)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp02_agregar_varios_productos_diferentes</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-03 Agregar el mismo producto dos veces">
+      <summary>Automatizado con Selenium / Playwright (cp03_agregar_el_mismo_producto_dos_veces)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp03_agregar_el_mismo_producto_dos_veces</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-04 Verificar contador del carrito">
+      <summary>Automatizado con Selenium / Playwright (cp04_verificar_contador_del_carrito)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp04_verificar_contador_del_carrito</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-05 Ver producto en el carrito">
+      <summary>Automatizado con Selenium / Playwright (cp05_ver_producto_en_el_carrito)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp05_ver_producto_en_el_carrito</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-06 Aumentar cantidad de un producto">
+      <summary>Automatizado con Selenium / Playwright (cp06_aumentar_cantidad_de_un_producto)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp06_aumentar_cantidad_de_un_producto</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-07 Disminuir cantidad de un producto">
+      <summary>Automatizado con Selenium / Playwright (cp07_disminuir_cantidad_de_un_producto)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp07_disminuir_cantidad_de_un_producto</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-08 Cambiar cantidad a cero">
+      <summary>Automatizado con Selenium / Playwright (cp08_cambiar_cantidad_a_cero)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp08_cambiar_cantidad_a_cero</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-09 Ingresar cantidad negativa">
+      <summary>Automatizado con Selenium / Playwright (cp09_ingresar_cantidad_negativa)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp09_ingresar_cantidad_negativa</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-10 Eliminar un producto del carrito">
+      <summary>Automatizado con Selenium / Playwright (cp10_eliminar_un_producto_del_carrito)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp10_eliminar_un_producto_del_carrito</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-11 Eliminar ultimo producto del carrito">
+      <summary>Automatizado con Selenium / Playwright (cp11_eliminar_ultimo_producto_del_carrito)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp11_eliminar_ultimo_producto_del_carrito</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-12 Eliminar un producto cuando hay varios">
+      <summary>Automatizado con Selenium / Playwright (cp12_eliminar_un_producto_cuando_hay_varios)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp12_eliminar_un_producto_cuando_hay_varios</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-13 Actualizar subtotal al eliminar producto">
+      <summary>Automatizado con Selenium / Playwright (cp13_actualizar_subtotal_al_eliminar_producto)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp13_actualizar_subtotal_al_eliminar_producto</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-14 Aplicar cupon valido">
+      <summary>Automatizado con Selenium / Playwright (cp14_aplicar_cupon_valido)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp14_aplicar_cupon_valido</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-15 Aplicar cupon invalido">
+      <summary>Automatizado con Selenium / Playwright (cp15_aplicar_cupon_invalido)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp15_aplicar_cupon_invalido</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-16 Aplicar cupon vacio">
+      <summary>Automatizado con Selenium / Playwright (cp16_aplicar_cupon_vacio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp16_aplicar_cupon_vacio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-17 Aplicar cupon repetido">
+      <summary>Automatizado con Selenium / Playwright (cp17_aplicar_cupon_repetido)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp17_aplicar_cupon_repetido</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-18 Verificar total con descuento">
+      <summary>Automatizado con Selenium / Playwright (cp18_verificar_total_con_descuento)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp18_verificar_total_con_descuento</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-19 Verificar total sin descuento">
+      <summary>Automatizado con Selenium / Playwright (cp19_verificar_total_sin_descuento)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp19_verificar_total_sin_descuento</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-20 Intentar pagar sin productos en carrito">
+      <summary>Automatizado con Selenium / Playwright (cp20_intentar_pagar_sin_productos_en_carrito)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp20_intentar_pagar_sin_productos_en_carrito</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-21 Confirmar checkout con datos vacios">
+      <summary>Automatizado con Selenium / Playwright (cp21_confirmar_checkout_con_datos_vacios)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp21_confirmar_checkout_con_datos_vacios</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-22 Validar nombre obligatorio">
+      <summary>Automatizado con Selenium / Playwright (cp22_validar_nombre_obligatorio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp22_validar_nombre_obligatorio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-23 Validar apellido obligatorio">
+      <summary>Automatizado con Selenium / Playwright (cp23_validar_apellido_obligatorio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp23_validar_apellido_obligatorio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-24 Validar correo obligatorio">
+      <summary>Automatizado con Selenium / Playwright (cp24_validar_correo_obligatorio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp24_validar_correo_obligatorio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-25 Validar correo con formato invalido">
+      <summary>Automatizado con Selenium / Playwright (cp25_validar_correo_con_formato_invalido)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp25_validar_correo_con_formato_invalido</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-26 Validar telefono obligatorio">
+      <summary>Automatizado con Selenium / Playwright (cp26_validar_telefono_obligatorio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp26_validar_telefono_obligatorio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-27 Validar direccion obligatoria">
+      <summary>Automatizado con Selenium / Playwright (cp27_validar_direccion_obligatoria)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp27_validar_direccion_obligatoria</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-28 Confirmar compra con datos validos">
+      <summary>Automatizado con Selenium / Playwright (cp28_confirmar_compra_con_datos_validos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp28_confirmar_compra_con_datos_validos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-29 Confirmar compra con varios productos">
+      <summary>Automatizado con Selenium / Playwright (cp29_confirmar_compra_con_varios_productos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp29_confirmar_compra_con_varios_productos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-30 Ver pantalla de confirmacion">
+      <summary>Automatizado con Selenium / Playwright (cp30_ver_pantalla_de_confirmacion)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp30_ver_pantalla_de_confirmacion</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-31 Volver al catalogo desde confirmacion">
+      <summary>Automatizado con Selenium / Playwright (cp31_volver_al_catalogo_desde_confirmacion)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp31_volver_al_catalogo_desde_confirmacion</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-32 Agregar producto desde la perspectiva del usuario">
+      <summary>Automatizado con Selenium / Playwright (cp32_agregar_producto_desde_la_perspectiva_del_usuario)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp32_agregar_producto_desde_la_perspectiva_del_usuario</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-33 Ver el carrito con el producto agregado">
+      <summary>Automatizado con Selenium / Playwright (cp33_ver_el_carrito_con_el_producto_agregado)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp33_ver_el_carrito_con_el_producto_agregado</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-34 Aplicar cupon valido">
+      <summary>Automatizado con Selenium / Playwright (cp34_aplicar_cupon_valido)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp34_aplicar_cupon_valido</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-35 Completar checkout con datos normales">
+      <summary>Automatizado con Selenium / Playwright (cp35_completar_checkout_con_datos_normales)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp35_completar_checkout_con_datos_normales</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-36 Intentar compra con datos incompletos">
+      <summary>Automatizado con Selenium / Playwright (cp36_intentar_compra_con_datos_incompletos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp36_intentar_compra_con_datos_incompletos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-37 Confirmar pedido final">
+      <summary>Automatizado con Selenium / Playwright (cp37_confirmar_pedido_final)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp37_confirmar_pedido_final</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-38 Comprar con mas de un articulo">
+      <summary>Automatizado con Selenium / Playwright (cp38_comprar_con_mas_de_un_articulo)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp38_comprar_con_mas_de_un_articulo</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-39 Intentar compra con carrito vacio">
+      <summary>Automatizado con Selenium / Playwright (cp39_intentar_compra_con_carrito_vacio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp39_intentar_compra_con_carrito_vacio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-40 Validar total final correcto">
+      <summary>Automatizado con Selenium / Playwright (cp40_validar_total_final_correcto)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp40_validar_total_final_correcto</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="CP-41 Flujo completo de compra">
+      <summary>Automatizado con Selenium / Playwright (cp41_flujo_completo_de_compra)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar cp41_flujo_completo_de_compra</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Rendimiento k6">
+    <testcase name="RD-01 Carga inicio">
+      <summary>Automatizado con Grafana k6 (rd-01-carga-inicio)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-01-carga-inicio</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-02 Consulta perfil">
+      <summary>Automatizado con Grafana k6 (rd-02-consulta-perfil)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-02-consulta-perfil</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-03 Consulta cursos">
+      <summary>Automatizado con Grafana k6 (rd-03-consulta-cursos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-03-consulta-cursos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-04 Consulta mensajes">
+      <summary>Automatizado con Grafana k6 (rd-04-consulta-mensajes)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-04-consulta-mensajes</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-05 Mezcla lecturas">
+      <summary>Automatizado con Grafana k6 (rd-05-mezcla-lecturas)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-05-mezcla-lecturas</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-06 Envio mensajes">
+      <summary>Automatizado con Grafana k6 (rd-06-envio-mensajes)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-06-envio-mensajes</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-07 Lecturas con escrituras">
+      <summary>Automatizado con Grafana k6 (rd-07-lecturas-con-escrituras)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-07-lecturas-con-escrituras</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-08 Variacion cuerpo">
+      <summary>Automatizado con Grafana k6 (rd-08-variacion-cuerpo)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-08-variacion-cuerpo</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-09 Estabilidad sostenida">
+      <summary>Automatizado con Grafana k6 (rd-09-estabilidad-sostenida)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-09-estabilidad-sostenida</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="RD-10 Capacidad objetivo">
+      <summary>Automatizado con Grafana k6 (rd-10-capacidad-objetivo)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar rd-10-capacidad-objetivo</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Estres k6">
+    <testcase name="ES-01 Rampa sobre carga">
+      <summary>Automatizado con Grafana k6 (es-01-rampa-sobre-carga)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-01-rampa-sobre-carga</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-02 Pico repentino">
+      <summary>Automatizado con Grafana k6 (es-02-pico-repentino)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-02-pico-repentino</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-03 Sobrecarga sostenida">
+      <summary>Automatizado con Grafana k6 (es-03-sobrecarga-sostenida)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-03-sobrecarga-sostenida</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-04 Sobrecarga cursos">
+      <summary>Automatizado con Grafana k6 (es-04-sobrecarga-cursos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-04-sobrecarga-cursos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-05 Sobrecarga mensajes">
+      <summary>Automatizado con Grafana k6 (es-05-sobrecarga-mensajes)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-05-sobrecarga-mensajes</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-06 Pico envios">
+      <summary>Automatizado con Grafana k6 (es-06-pico-envios)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-06-pico-envios</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-07 Cuerpos cercanos 16kib">
+      <summary>Automatizado con Grafana k6 (es-07-cuerpos-cercanos-16kib)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-07-cuerpos-cercanos-16kib</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-08 Solicitudes invalidas">
+      <summary>Automatizado con Grafana k6 (es-08-solicitudes-invalidas)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-08-solicitudes-invalidas</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-09 Saturacion conexiones">
+      <summary>Automatizado con Grafana k6 (es-09-saturacion-conexiones)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-09-saturacion-conexiones</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="ES-10 Recuperacion">
+      <summary>Automatizado con Grafana k6 (es-10-recuperacion)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar es-10-recuperacion</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Seguridad k6">
+    <testcase name="SE-01 Traversal">
+      <summary>Automatizado con Grafana k6 (se-01-traversal)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-01-traversal</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-02 Codificacion invalida">
+      <summary>Automatizado con Grafana k6 (se-02-codificacion-invalida)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-02-codificacion-invalida</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-03 Json malformado">
+      <summary>Automatizado con Grafana k6 (se-03-json-malformado)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-03-json-malformado</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-04 Cuerpo mayor limite">
+      <summary>Automatizado con Grafana k6 (se-04-cuerpo-mayor-limite)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-04-cuerpo-mayor-limite</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-05 Validacion campos">
+      <summary>Automatizado con Grafana k6 (se-05-validacion-campos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-05-validacion-campos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-06 Inyeccion contenido">
+      <summary>Automatizado con Grafana k6 (se-06-inyeccion-contenido)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-06-inyeccion-contenido</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-07 Cabeceras seguridad">
+      <summary>Automatizado con Grafana k6 (se-07-cabeceras-seguridad)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-07-cabeceras-seguridad</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-08 Metodos no permitidos">
+      <summary>Automatizado con Grafana k6 (se-08-metodos-no-permitidos)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-08-metodos-no-permitidos</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-09 Fuga informacion">
+      <summary>Automatizado con Grafana k6 (se-09-fuga-informacion)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-09-fuga-informacion</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+    <testcase name="SE-10 Campos extra prototipo">
+      <summary>Automatizado con Grafana k6 (se-10-campos-extra-prototipo)</summary>
+      <preconditions>Entorno levantado con Docker Compose</preconditions>
+      <execution_type>2</execution_type>
+      <steps><step><step_number>1</step_number><actions>Ejecutar se-10-campos-extra-prototipo</actions><expectedresults>Resultado esperado según el escenario</expectedresults><execution_type>2</execution_type></step></steps>
+    </testcase>
+  </testsuite>
+</testsuite>

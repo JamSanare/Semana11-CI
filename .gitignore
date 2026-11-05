@@ -4,3 +4,9 @@ reports/
 evidencias/
 evidencias-playwright/
 .env
+reports/
+testlink/config_db.inc.php
+reports/
+testlink/config_db.inc.php
+.DS_Store
+actions-runner/

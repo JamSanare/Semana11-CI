@@ -1,0 +1,32 @@
+ Container proyecto-tiendademo-aulanova-runner-run-5cb33e2aef2c Creating 
+ Container proyecto-tiendademo-aulanova-runner-run-5cb33e2aef2c Created 
+=== es-01-rampa-sobre-carga ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-02-pico-repentino ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-03-sobrecarga-sostenida ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-04-sobrecarga-cursos ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-05-sobrecarga-mensajes ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-06-pico-envios ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-07-cuerpos-cercanos-16kib ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-08-solicitudes-invalidas ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-09-saturacion-conexiones ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
+=== es-10-recuperacion ===
+   código de salida: 0 (0 = umbrales cumplidos, 99 = umbral incumplido)
+   servidor: vivo al terminar
