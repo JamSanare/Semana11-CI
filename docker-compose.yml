@@ -56,6 +56,30 @@ services:
     networks:
       - pruebas
 
+  # ---------- AulaNova (aulavirtual) ----------
+  aulavirtual:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.aulavirtual
+    image: tiendademo-aulavirtual:${IMAGE_TAG:-local}
+    ports:
+      - "${AULA_PORT:-3000}:3000"
+
+  aulanova-runner:
+    profiles: ["tests"]
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.aulanova-tests
+    image: tiendademo-aulanova-tests:${IMAGE_TAG:-local}
+    command: ["bash", "pruebas/scripts/ejecutar.sh", "funcional"]
+    environment:
+      - TARGET_VUS
+      - DUR
+      - STEP_DUR
+      - SOAK_DURATION
+    volumes:
+      - ./reports/aulanova:/app/pruebas/resultados
+
 networks:
   pruebas:
     name: tiendademo-pruebas
